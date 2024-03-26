@@ -8,6 +8,6 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 
-@app.route("/ping")
+@app.route("/ping", methods=['GET'])
 def pinger():
     return {'Message': 'Hi I am pinging.............'}

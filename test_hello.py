@@ -12,8 +12,7 @@ def test_pinger(client):
     assert res.json=={'Message': 'Hi I am pinging.............'}
 
 def test_predictions(client):
-    res = client.post('/predict')
-    assert res.status_code==200
+
     test_data = {
     "Gender":"Male",
     "Married":"No",

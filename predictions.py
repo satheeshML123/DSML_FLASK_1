@@ -3,6 +3,15 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World V2 !</p>"
+
+
+@app.route("/ping")
+def pinger():
+    return {"Message": "Hi I am pinging............."}
+
 model_pickle=open('artifacts/classifier.pkl','rb')
 clf=pickle.load(model_pickle)
 
