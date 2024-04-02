@@ -1,4 +1,3 @@
-
 name: Running tests on push to main and deploying to ECS
 
 on:
